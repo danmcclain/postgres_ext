@@ -9,7 +9,7 @@ require 'postgres_ext/active_record/relation/query_methods'
 
 if ar_5_0_version_cutoff
   require 'postgres_ext/active_record/5.0/relation/predicate_builder/array_handler'
-elsif ar_4_2_version_cutuff
+elsif ar_4_2_version_cutoff
   require 'postgres_ext/active_record/relation/predicate_builder/array_handler'
 else
   require 'postgres_ext/active_record/4.x/relation/predicate_builder'
