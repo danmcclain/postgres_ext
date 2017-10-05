@@ -5,6 +5,8 @@ gdep_5_0 = Gem::Dependency.new('activerecord', '~> 5.0.0')
 ar_5_0_version_cutoff = gdep_5_0.matching_specs.sort_by(&:version).last
 
 require 'postgres_ext/active_record/relation/merger'
+require 'postgres_ext/active_record/relation/query_methods/with_chain'
+require 'postgres_ext/active_record/relation/query_methods/where_chain'
 require 'postgres_ext/active_record/relation/query_methods'
 
 if ar_5_0_version_cutoff
