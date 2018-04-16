@@ -6,6 +6,15 @@ rvm:
 - 2.1.2
 - 2.2.0
 
+branches:
+  only:
+    # This is where pull requests from "bors r+" are built.
+    - staging
+      # This is where pull requests from "bors try" are built.
+    - trying
+      # Uncomment this to enable building pull requests.
+    - master
+
 gemfile:
   - gemfiles/Gemfile.activerecord-4.0.x
   - gemfiles/Gemfile.activerecord-4.1.x
@@ -17,8 +26,5 @@ before_script:
 - psql -c 'create database postgres_ext_test;' -U postgres -h localhost
 - bundle exec rake db:migrate
 
-notifications:
-  email:
-  - git@danmcclain.net
 addons:
   postgresql: '9.3'
