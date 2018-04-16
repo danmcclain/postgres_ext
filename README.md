@@ -1,19 +1,20 @@
 # PostgresExt
 
+## You can help!
+This gem could use some updating, and I've moved on from Ruby, but I'd like to see this gem continue to survive. If you're interested in helping maintain the gem, please reach out on [twitter](https://twitter.com/_danmcclain).
+
+## Overview
+
 Adds missing native PostgreSQL data types to ActiveRecord and convenient querying extensions for ActiveRecord and Arel for Rails 4.x
 
-[![Build Status](https://secure.travis-ci.org/DockYard/postgres_ext.png?branch=master)](https://travis-ci.org/DockYard/postgres_ext)
-[![Code Climate](https://codeclimate.com/github/dockyard/postgres_ext.png)](https://codeclimate.com/github/dockyard/postgres_ext)
+[![Build Status](https://secure.travis-ci.org/danmcclain/postgres_ext.png?branch=master)](https://travis-ci.org/danmcclain/postgres_ext)
+[![Code Climate](https://codeclimate.com/github/danmcclain/postgres_ext.png)](https://codeclimate.com/github/danmcclain/postgres_ext)
 [![Gem Version](https://badge.fury.io/rb/postgres_ext.png)](https://badge.fury.io/rb/postgres_ext)
 
 ## Looking for help? ##
 
-If it is a bug [please open an issue on
-Github](https://github.com/dockyard/postgres_ext/issues). If you need help using
-the gem please ask the question on
-[Stack Overflow](http://stackoverflow.com). Be sure to tag the
-question with `DockYard` so we can find it.
-
+Bug or question?  [Please open an issue on
+Github](https://github.com/danmcclain/postgres_ext/issues).
 ## Installation
 
 Add this line to your application's Gemfile:

@@ -10,7 +10,7 @@ module Arel
                  when Arel::Nodes::TableAlias, NilClass
                  # noop Prevent from searching for table alias name in schema cache
                  # which won't exist for aliased table when used with Single Table
-                 # Inheritance. see dockyard/postgres_ext#154
+                 # Inheritance. see dockyard/postgres_ext#154 (This issue has been removed)
                  else
                   cache = a.relation.engine.connection.schema_cache
                   if cache.table_exists? a.relation.name

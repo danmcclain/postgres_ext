@@ -1,3 +1,7 @@
+## 3.0.1
+
+ * Small doc updates
+
 ## 3.0.0
 
  * Fixes merging queries with CTE - chitux
