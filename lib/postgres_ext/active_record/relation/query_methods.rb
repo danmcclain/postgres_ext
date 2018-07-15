@@ -113,7 +113,7 @@ module ActiveRecord
 end
 
 module RelationPrepend
-  def build_arel
+  def build_arel(_alias)
     arel = super
 
     build_with(arel)
