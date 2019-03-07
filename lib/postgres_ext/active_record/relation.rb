@@ -8,6 +8,7 @@ require 'postgres_ext/active_record/relation/merger'
 require 'postgres_ext/active_record/relation/query_methods/with_chain'
 require 'postgres_ext/active_record/relation/query_methods/where_chain'
 require 'postgres_ext/active_record/relation/query_methods'
+require 'postgres_ext/active_record/relation/where_clause'
 
 if ar_5_0_version_cutoff
   require 'postgres_ext/active_record/5.0/relation/predicate_builder/array_handler'
